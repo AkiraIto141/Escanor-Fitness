@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Emilys Candy", serif;
+}
+
+body {
+    padding-top: 10vh;
+    /* compensa a altura do menu fixo */
+}
+
+
+.material-icons {
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+
+.menu,
+.logo {
+    color: #ffc900;
+    text-decoration: none;
+    transform: 0.3s;
+}
+
+.menu:hover {
+    opacity: 0.7;
+}
+
+.menu:active {
+    color: brown;
+    /*mudar cor*/
+}
+
+
+#nomelogo {
+    font-size: 5vh;
+
+}
+
+.arte_logo img {
+    margin-top: 2px;
+    height: 16vh;
+    width: 16vh;
+}
+
+
+.logo {
+
+    font-size: 2.9vh;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+
+}
+
+body {
+    padding-top: 17vh;
+    /* compensa a altura do menu fixo */
+}
+
+nav {
+    position: fixed;
+    /* Mantém o menu fixo no topo */
+    top: 0;
+    /* Encosta o menu no topo da janela */
+    left: 0;
+    /* Encosta o menu na lateral esquerda */
+    width: 100%;
+    /* Faz o menu ocupar toda a largura */
+    z-index: 1000;
+    /* Garante que fique acima dos outros elementos */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    background-color: #23232ef5;
+    /* mudar cor*/
+    height: 17vh;
+    /*largura da fita do menu*/
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+@media (max-width: 999px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    #nomelogo {
+        font-size: 3vh;
+    }
+
+    .nav-list {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        /*largura do menu*/
+        height: 92vh;
+        background-color: #23232e;
+        /*mudar cor*/
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.4s ease-in;
+    }
+
+    .nav-list li {
+        margin-left: 0;
+        opacity: 0;
+    }
+
+    .material-icons {
+        display: block;
+    }
+}
+
+.nav-list.active {
+    transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/*____________________________Rodape_______________________________________________________ */
+
+
+.rodape__logo {
+    margin-bottom: 2em;
+    max-width: 25vh;
+    max-height: 25vh;
+}
+
+.hora h1 {
+    color: red;
+}
+
+.rodape {
+    text-align: center;
+    margin: 5em 3em;
+    border-radius: 15px;
+    align-items: center;
+    padding: 2vh;
+    margin-top: 20vh;
+    margin-bottom: 0;
+    background-color: #c9bb79;
+}
+#button{
+    background: linear-gradient(to right, #FFD700, #FFA500);
+    color: #000;
+    border: none;
+    padding: 3vh 6vh;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 10px #ffd900b7;
+    border-radius: 30px;
+}
+#button:hover {
+    background: #ff2c2c;
+    color: #fff;
+    box-shadow: 0 0 15px #ff2c2c88;
+}
+
+#button:active {
+    background: #fd8121;
+    color: #fff;
+    box-shadow: 0 0 15px #cc5803;
+}
+
+.rodape__texto {
+    margin: 1em 0;
+    color: black;
+    /*mudar cor*/
+    font-size: 2.2vh;
+}
+
+/* -------------------------------------------------------------------------------------------------------- */
+.conteinerRedeSocial {
+    display: grid;
+    grid-template-areas: 1fr;
+    margin-bottom: 0;
+}
+
+.redeSocial {
+    margin-bottom: 0px;
+}
+
+.rodape__lista {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 1em;
+}
+
+.lista__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+.lista__link img {
+    width: 4vh;
+    height: 4vh;
+}
+
+.lista__link a {
+    text-decoration: none;
+    color: #000000;
+    margin-left: 1em;
+    font-size: 2vh;
+}
+
+.lista__link a:hover {
+    color: #ffcc33;
+}
+
+.lista__link a:active {
+    color: #f56b00;
+}
